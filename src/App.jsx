@@ -1,7 +1,12 @@
 import React from "react";
+import FirstSlide from "./components/firstSlide/FirstSlide";
 
 const App = () => {
-  return <div className="border-2 border-amber-950 size-14"></div>;
+  return (
+    <div>
+      <FirstSlide></FirstSlide>
+    </div>
+  );
 };
 
 export default App;

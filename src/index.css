@@ -1,1 +1,10 @@
-@import "tailwindcss"
+@import "tailwindcss";
+@theme{
+--font-style:"Source Serif 4", serif;
+--color-design-purple-bg:oklch(0.4698 0.2064 285.65);
+--color-design-pink-block-800:oklch(0.7952 0.0892 348.3);
+--color-design-purple-block-300:oklch(0.747 0.1063 281.11);
+--color-design-purple-block-400:oklch(0.7138 0.1461 289.83);
+--color-design-yellow-block:oklch(0.9409 0.1755 104.76);
+--color-firstSlide: oklch(0.9791 0 0);
+}
