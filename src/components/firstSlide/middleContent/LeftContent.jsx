@@ -2,20 +2,16 @@ import React from "react";
 
 const LeftContent = () => {
   return (
-    <div className="relative">
-      <div
-        style={{ clipPath: "polygon(100% 0, 0% 100%, 100% 100%)" }}
-        className="h-[8.8rem] w-[19rem] bg-amber-700 absolute right-0 bottom-0"
-      ></div>
-      <div className="font-style flex  w-[100%]">
+    <div>
+      <div className="font-style flex  w-[100%] relative">
         <div className="h-[80vh] w-[20%] relative">
           <p className="rotate-270 absolute top-10 left-8">2023</p>
           <p className="border-2 h-[12rem] w-0 absolute top-18 left-13"></p>
           <p className="rotate-270 absolute left-[-1.2rem] top-83 w-max">
             Full Stack Developer
           </p>
-          <p className="border-2 h-[28rem] w-0 absolute top-106 left-15"></p>
-          <p className="rotate-270 absolute top-223 left-9">present</p>
+          <p className="border-2 h-[30%] w-0 absolute top-106 left-15"></p>
+          <p className="rotate-270 absolute top-165 left-9">present</p>
         </div>
 
         <div className="flex flex-col justify-center gap-5 w-[80%]">
@@ -26,6 +22,10 @@ const LeftContent = () => {
             can figure out.” <br /> - Chris Pine
           </p>
         </div>
+        <div
+          style={{ clipPath: "polygon(100% 0, 0% 100%, 100% 100%)" }}
+          className="h-[12.5%] w-[18%] bg-design-blue-block-600 absolute right-0 -bottom-20"
+        ></div>
       </div>
     </div>
   );
