@@ -5,7 +5,7 @@ import RightContent from "./middleContent/RightContent";
 
 const FirstSlide = () => {
   return (
-    <div className="bg-firstSlide border-4 w-screen h-dvh mt-0">
+    <div className="bg-firstSlide w-screen h-dvh mt-0">
       <div className="grid grid-cols-3 p-2">
         <div className="col-span-2">
           <Navbar></Navbar>
