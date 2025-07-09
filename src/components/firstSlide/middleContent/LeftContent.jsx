@@ -24,7 +24,7 @@ const LeftContent = () => {
         </div>
         <div
           style={{ clipPath: "polygon(100% 0, 0% 100%, 100% 100%)" }}
-          className="h-[18%] w-[24%] bg-design-blue-block-600 absolute right-0 -bottom-20"
+          className="h-[18%] w-[24%] bg-design-blue-block-600 absolute right-0 -bottom-19.5"
         ></div>
       </div>
     </div>
