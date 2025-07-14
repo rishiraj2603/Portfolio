@@ -4,7 +4,7 @@ import SecondSlide from "./components/secondSlide/SecondSlide";
 
 const App = () => {
   return (
-    <div>
+    <div className="font-style">
       <FirstSlide></FirstSlide>
       <SecondSlide></SecondSlide>
     </div>

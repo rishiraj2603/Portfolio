@@ -3,7 +3,7 @@ import React from "react";
 const LeftContent = () => {
   return (
     <div>
-      <div className="font-style flex  w-[100%] relative">
+      <div className=" flex  w-[100%] relative">
         <div className="h-[80vh] w-[20%] relative">
           <p className="rotate-270 absolute top-10 left-8">2023</p>
           <p className="border-2 h-[12rem] w-0 absolute top-18 left-13"></p>

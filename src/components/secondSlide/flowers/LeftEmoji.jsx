@@ -2,7 +2,7 @@ import React from "react";
 
 const LeftEmoji = () => {
   return (
-    <div className="relative w-max h-max left-50 top-30">
+    <div className="relative size-[14rem] left-50 top-70">
       <div className=" main_circle border-4 size-56 rounded-full relative z-10 bg-white">
         <div
           style={{ boxShadow: "inset -15px 2px 0px 2px rgba(0,0,0,0.2" }}

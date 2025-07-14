@@ -24,10 +24,14 @@
 --animate-block-right: block_right 5s ease-in-out infinite;
 --animate-block-top-pink: block_top_pink 5s ease-in-out infinite;
 --animate-block-top-blue: block_top_blue 5s ease-in-out infinite;
---animate-emoji-eyes-left: eyes_size_left 2s ease-in-out infinite;
---animate-emoji-eyes-right: eyes_size_right 2s ease-in-out infinite;
+--animate-emoji-eyes-left: eyes_size_left 4s ease-in-out infinite;
+--animate-emoji-eyes-right: eyes_size_right 4s ease-in-out infinite;
 --animate-emoji-box: emoji_box 3s ease-in-out  infinite alternate;
+--animate-box-slide1: box_slide1 5s ease-in-out  infinite normal ;
+--animate-box-slide2: box_slide2 5s 1.5s ease-in-out infinite normal;
+--animate-box-slide3: box_slide3 5s 3s ease-in-out  infinite normal;
 --shadow-emoji-box: -3rem -6rem 0 0 rgba(0,0,0, .15),13rem -3rem 0 0 rgba(0,0,0, .15),13rem -10rem 0 0 rgba(0,0,0, .15); 
+--shadow-aboutMe-box:rgba(0, 0, 0, 0.16) -5px 5px, rgba(0, 0, 0, 0.14) -10px 10px, rgba(0, 0, 0, 0.16) -15px 15px, rgba(0, 0, 0, 0.16) -20px 20px, rgba(0, 0, 0, 0.16) -25px 25px;
   @keyframes up {
      0%{
         transform: translateY(0%);
@@ -97,6 +101,10 @@
         height: 1.5rem;
         width: 0rem;
     }
+    50%{
+         height: 2.5rem;
+        width: 2.5rem;
+    }
     60%{
          height: 2rem;
         width: 1rem;
@@ -123,6 +131,10 @@
         height: 0rem;
         width: 1.5rem;
     }
+     50%{
+         height: 2.5rem;
+        width: 2.5rem;
+    }
     60%{
          height: 1rem;
         width: 2rem;
@@ -142,6 +154,46 @@
     }
     to{
         box-shadow:-1rem -6rem 0 0 rgba(0,0,0, .15),10rem -3rem 0 0 rgba(0,0,0, .15),16rem -10rem 0 0 rgba(0,0,0, .15)
+    }
+  }
+  @keyframes box_slide1 {
+    0%{
+        transform:translate(0,0)
+    }
+    50%{
+        transform:rotate(5deg) translate(-2rem,-20rem) scale(0.96)
+    }   
+    100%{
+        z-index:1;
+        transform:translate(0,0);
+        opacity: 0;
+    }
+
+  }
+    @keyframes box_slide2 {
+ 0%{
+        transform:translate(0,0)
+    }
+    50%{
+        transform:rotate(5deg) translate(-2rem,-20rem) scale(0.96)
+    }   
+    100%{
+        z-index:1;
+        transform:translate(0,0);
+        opacity: 0;
+    }
+  }
+    @keyframes box_slide3 {
+    0%{
+        transform:translate(0,0)
+    }
+    50%{
+        transform:rotate(5deg) translate(-2rem,-20rem) scale(0.96)
+    }   
+    100%{
+        z-index:1;
+        transform:translate(0,0);
+        opacity: 0;
     }
   }
 
