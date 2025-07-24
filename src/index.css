@@ -27,11 +27,9 @@
 --animate-emoji-eyes-left: eyes_size_left 4s ease-in-out infinite;
 --animate-emoji-eyes-right: eyes_size_right 4s ease-in-out infinite;
 --animate-emoji-box: emoji_box 3s ease-in-out  infinite alternate;
---animate-box-slide1: box_slide1 5s ease-in-out  infinite normal ;
---animate-box-slide2: box_slide2 5s 1.5s ease-in-out infinite normal;
---animate-box-slide3: box_slide3 5s 3s ease-in-out  infinite normal;
+--animate-aboutMe-box: aboutMe_box 0.1s ease-in-out 1 forwards;
 --shadow-emoji-box: -3rem -6rem 0 0 rgba(0,0,0, .15),13rem -3rem 0 0 rgba(0,0,0, .15),13rem -10rem 0 0 rgba(0,0,0, .15); 
---shadow-aboutMe-box:rgba(0, 0, 0, 0.16) -5px 5px, rgba(0, 0, 0, 0.14) -10px 10px, rgba(0, 0, 0, 0.16) -15px 15px, rgba(0, 0, 0, 0.16) -20px 20px, rgba(0, 0, 0, 0.16) -25px 25px;
+--shadow-aboutMe-box:rgba(0, 0, 0, 0.56) -10px 22px 70px 10px;
   @keyframes up {
      0%{
         transform: translateY(0%);
@@ -156,44 +154,12 @@
         box-shadow:-1rem -6rem 0 0 rgba(0,0,0, .15),10rem -3rem 0 0 rgba(0,0,0, .15),16rem -10rem 0 0 rgba(0,0,0, .15)
     }
   }
-  @keyframes box_slide1 {
-    0%{
-        transform:translate(0,0)
+@keyframes aboutMe_box {
+    from{
+        transform:rotate(0deg)
     }
-    50%{
-        transform:rotate(5deg) translate(-2rem,-20rem) scale(0.96)
-    }   
-    100%{
-        z-index:1;
-        transform:translate(0,0);
-        opacity: 0;
-    }
-
-  }
-    @keyframes box_slide2 {
- 0%{
-        transform:translate(0,0)
-    }
-    50%{
-        transform:rotate(5deg) translate(-2rem,-20rem) scale(0.96)
-    }   
-    100%{
-        z-index:1;
-        transform:translate(0,0);
-        opacity: 0;
-    }
-  }
-    @keyframes box_slide3 {
-    0%{
-        transform:translate(0,0)
-    }
-    50%{
-        transform:rotate(5deg) translate(-2rem,-20rem) scale(0.96)
-    }   
-    100%{
-        z-index:1;
-        transform:translate(0,0);
-        opacity: 0;
+    to{
+     transform:rotate(5deg)
     }
   }
 

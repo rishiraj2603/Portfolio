@@ -5,9 +5,9 @@ import RightContent from "./middleContent/RightContent";
 
 const FirstSlide = () => {
   return (
-    <div className="bg-firstSlide w-screen h-dvh px-4 m-2">
+    <div className="bg-firstSlide w-dvw h-dvh px-4 m-[0.2rem]">
       <div className="grid grid-cols-3">
-        <div className="col-span-2">
+        <div className="col-span-2 ">
           <Navbar></Navbar>
           <LeftContent></LeftContent>
         </div>
