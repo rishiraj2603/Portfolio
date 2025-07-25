@@ -17,10 +17,6 @@ animation: box_slide 3s ease-in-out 1 forwards;
 animation: box_slide 3s ease-in-out 1 forwards;
 }
 
-.projectCard:hover div:last-child{
-  display: block;
-}
-
 @keyframes about_box {
     from{
         transform:rotate(0deg)
