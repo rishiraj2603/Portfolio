@@ -1,0 +1,50 @@
+.slide_1:hover, .slide_3:hover {
+  z-index: 20;
+  animation: about_box 0.1s ease-in-out 1 forwards;
+}
+.slide_2:hover{
+   z-index: 20;
+  animation: about_box_2 0.5s ease-in-out 1 forwards;
+}
+
+.slides_wrapper:has(.slide_1:hover) div:not(:hover)  { 
+animation: box_slide 3s ease-in-out 1 forwards;
+}
+.slides_wrapper:has(.slide_2:hover) div:not(:hover)  { 
+animation: box_slide 3s ease-in-out 1 forwards;
+}
+.slides_wrapper:has(.slide_3:hover) div:not(:hover)  { 
+animation: box_slide 3s ease-in-out 1 forwards;
+}
+
+.projectCard:hover div:last-child{
+  display: block;
+}
+
+@keyframes about_box {
+    from{
+        transform:rotate(0deg)
+    }
+    to{
+     transform:rotate(5deg)
+    }
+  }
+
+@keyframes box_slide {
+    0%{
+        left:0px
+    }
+    100%{
+     left:30%
+    }
+  }
+
+@keyframes about_box_2 {
+    0%{
+        top:18%
+    }
+    100%{
+     top:16%
+    }
+  }
+

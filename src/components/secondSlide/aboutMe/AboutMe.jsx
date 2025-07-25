@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 
 const AboutMe = () => {
   return (
-    <div className="relative text-[1.9rem] h-full w-full rounded-4xl tracking-tight text-neutral-600">
-      <div className="slide_1 bg-firstSlide absolute h-[24rem] w-[19rem] border-2 top-40 rounded-4xl z-1 shadow-aboutMe-box hover:animate-aboutMe-box after:text-red-400 hover:z-10">
+    <div className="relative slides_wrapper text-[1.9rem] h-full w-full rounded-4xl tracking-tight text-neutral-600">
+      <div className="slide_1 bg-firstSlide absolute h-[24rem] w-[19rem] border-2 top-40 rounded-4xl z-1 shadow-aboutMe-box">
         <p className="absolute left-[10%] top-[5%]">I'm Rishi Raj,</p>
       </div>
 
