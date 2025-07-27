@@ -9,7 +9,7 @@ const ProjectCard = ({ project }) => {
   const [flip, setFlip] = useState(true);
 
   return (
-    <div className="projectCard shadow-projectCard opacity-80 bg-white h-[60%] w-[30%] rounded-4xl  m-10 p-2 transition duration-200 ease hover:shadow-projectCard-hover hover:opacity-100 hover:scale-100 scale-90">
+    <div className="projectCard shadow-projectCard opacity-80 bg-white h-[60%] w-[30%] rounded-4xl p-2 transition duration-200 ease hover:shadow-projectCard-hover hover:opacity-100 hover:scale-100 scale-90">
       {flip ? (
         <div
           className=" flex gap-4 p-4 h-[80%] w-[100%] flex-col rounded-4xl"
@@ -17,17 +17,19 @@ const ProjectCard = ({ project }) => {
         >
           <div className="text-4xl mt-2 w-fit">{title}</div>
           <div className="my-5 mx-1">{descriptionLines[0]}</div>
-          <div className=" flex flex-wrap gap-2">
-            {skill.map((skill) => {
-              return (
-                <button
-                  style={{ backgroundColor: buttonBackGround_color }}
-                  className="rounded-full shadow-skillButton h-[3.5rem] w-[7.5rem] hover:shadow-projectCard-hover "
-                >
-                  {skill}
-                </button>
-              );
-            })}
+          <div className="skillButtonBox max-w-[100%] overflow-hidden">
+            <div className="flex flex-nowrap w-max gap-3 animate-horizontalScrolling">
+              {skill.map((skill) => {
+                return (
+                  <button
+                    style={{ backgroundColor: buttonBackGround_color }}
+                    className="rounded-full shadow-skillButton h-[4.5rem] px-10 hover:shadow-projectCard-hover "
+                  >
+                    {skill}
+                  </button>
+                );
+              })}
+            </div>
           </div>
         </div>
       ) : (

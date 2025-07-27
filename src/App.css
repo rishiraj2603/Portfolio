@@ -17,6 +17,10 @@ animation: box_slide 3s ease-in-out 1 forwards;
 animation: box_slide 3s ease-in-out 1 forwards;
 }
 
+.skillButtonBox {
+ mask: linear-gradient(90deg, transparent,white 20% , white 80% , transparent);
+}
+
 @keyframes about_box {
     from{
         transform:rotate(0deg)

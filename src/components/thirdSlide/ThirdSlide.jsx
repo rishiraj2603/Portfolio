@@ -25,7 +25,7 @@ const ThirdSlide = () => {
     {
       title: "Medicine Vault",
       link: "https://medicine-vault-bfff.onrender.com/",
-      skills: "React,Tailwind,Fuzzy Search,MongoDB,Express,Passport.js",
+      skills: "React,Tailwind CSS,Fuzzy Search,MongoDB,Express,Passport.js",
       description:
         "Medicine Vault provides various medicine knowledge to help users find the medicine they need. •Medicine Information contains: Side-effects, Interaction, Mode Of Action, Precaution, Dosage •The medicine database is created from open-source information. •MongoDB is used as a database to store medical information. • Passport.js is utilized for authentication purposes. •Fuzzy search is implemented using fuse.js. •React and Tailwind is used to create the UI",
       backGround_color: "#e2dbf9",
