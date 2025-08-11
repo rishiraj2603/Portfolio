@@ -1,3 +1,4 @@
+import { motion, useAnimationFrame } from "framer-motion";
 import React, { useState } from "react";
 import { IoMdArrowForward } from "react-icons/io";
 
@@ -5,7 +6,6 @@ const ProjectCard = ({ project }) => {
   const { title, link, backGround_color, buttonBackGround_color } = project;
   const descriptionLines = project.description.split("•");
   const skill = project.skills.split(",");
-
   const [flip, setFlip] = useState(true);
 
   return (
@@ -18,18 +18,20 @@ const ProjectCard = ({ project }) => {
           <div className="text-4xl mt-2 w-fit">{title}</div>
           <div className="my-5 mx-1">{descriptionLines[0]}</div>
           <div className="skillButtonBox max-w-[100%] overflow-hidden">
-            <div className="flex flex-nowrap w-max gap-3 animate-horizontalScrolling">
+            <motion.div className="flex flex-nowrap gap-4 w-max animate-horizontalScrolling">
               {skill.map((skill) => {
                 return (
                   <button
-                    style={{ backgroundColor: buttonBackGround_color }}
+                    style={{
+                      backgroundColor: buttonBackGround_color,
+                    }}
                     className="rounded-full shadow-skillButton h-[4.5rem] px-10 hover:shadow-projectCard-hover "
                   >
                     {skill}
                   </button>
                 );
               })}
-            </div>
+            </motion.div>
           </div>
         </div>
       ) : (

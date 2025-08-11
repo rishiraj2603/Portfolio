@@ -1,15 +1,16 @@
 import React from "react";
 import "./App.css";
-import FirstSlide from "./components/firstSlide/FirstSlide";
-import SecondSlide from "./components/secondSlide/SecondSlide";
-import ThirdSlide from "./components/thirdSlide/ThirdSlide";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./components/HomePage";
+import ContactPage from "./components/Contact/ContactPage";
 
 const App = () => {
   return (
     <div className="font-style">
-      <FirstSlide></FirstSlide>
-      <SecondSlide></SecondSlide>
-      <ThirdSlide></ThirdSlide>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
     </div>
   );
 };

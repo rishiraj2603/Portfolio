@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "./navbar/Navbar";
 import LeftContent from "./middleContent/LeftContent";
 import RightContent from "./middleContent/RightContent";
+import Navbar from "../navbar/Navbar";
 
 const FirstSlide = () => {
   return (

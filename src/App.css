@@ -21,6 +21,14 @@ animation: box_slide 3s ease-in-out 1 forwards;
  mask: linear-gradient(90deg, transparent,white 20% , white 80% , transparent);
 }
 
+.contactCard {
+    border-radius: 80% 20% 40% 58% / 42% 18% 82% 58%  ;
+    overflow: hidden;
+    transform: rotate(45deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
 @keyframes about_box {
     from{
         transform:rotate(0deg)
