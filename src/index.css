@@ -177,6 +177,8 @@
 
 }
 
+ .contactInput{ @apply focus:border-b-2 focus:border-b-[#0077FF] focus:outline-none }
+
 html{
     font-size: 13px;
 }

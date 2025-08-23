@@ -26,9 +26,10 @@ const Contact = () => {
           <div className="w-[28%]">
             <p>First name</p>
             <input
+              style={{ " -webkit-appearance": "none" }}
               type="text"
               placeholder="John"
-              className=" py-2 border-b-1 w-full "
+              className=" py-2 border-b-1 w-full contactInput "
             />
           </div>
           <div className=" w-[28%]">
@@ -36,7 +37,7 @@ const Contact = () => {
             <input
               type="text"
               placeholder="Carish"
-              className=" py-2 border-b-1 w-full "
+              className=" py-2 border-b-1 w-full contactInput "
             />
           </div>
         </div>
@@ -45,7 +46,7 @@ const Contact = () => {
           <input
             type="email"
             placeholder="example@email"
-            className=" py-2 border-b-1 w-full "
+            className=" py-2 border-b-1 w-full contactInput "
           />
         </div>{" "}
         <div className=" w-[60%]">
@@ -53,7 +54,7 @@ const Contact = () => {
           <input
             type="text"
             placeholder="+91XXXXXXXXXX"
-            className=" py-2 border-b-1 w-full "
+            className=" py-2 border-b-1 w-full contactInput "
           />
         </div>{" "}
         <div className=" w-[60%]">
@@ -61,7 +62,7 @@ const Contact = () => {
           <input
             type="text"
             placeholder="Type your messages here"
-            className=" py-2 border-b-1 w-full "
+            className=" py-2 border-b-1 w-full contactInput"
           />
         </div>
         <button>Submit</button>
